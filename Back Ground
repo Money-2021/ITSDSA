@@ -1,0 +1,46 @@
+The physical and digital worlds are not the same, all digital objects that exist inside a digital world must follow the following laws:
+
+Law 1: No digital object can be "dated" as the passage of time cannot have any measurable, or observable effect on any digital object. There exists no functional equivalent of 'carbon dating' within a digital world. Digital Objects are ageless, and it is technically impossible, to determine any precedence or order of existence of one digital object, from another identical digital object across a space-time or temporal context.
+
+Law 2: Any copy of a digital object must always be a "Digital Original", the concept of a copy cannot exist inside a digital world. And an infinite no of copies can exist of any digital object.
+
+Law 3: All commodities  or works with a physical world are non-fungible by nature, all digital objects, within a digital world are fungible by the nature.
+
+Law 4: All Digital object can be copied infinitely at incrementally zero cost, and it is impossible to detect a copy from the original object by any known technology or process. Hence the ability to ensure or certify  the destruction of a digital object can never exist. 
+
+Law 5: In order to view any digital object or digital information, any device or process which enables viewing access to an digital object, via a device or process must first create a digitally ( bit wise) perfect copy of the original digital object. It is technically possible to view an object without  first creating a copy.
+
+Law 6: he ability for any human to "observe the exitance of digital objects", relies upon transforms from digital bits into a form able to be cognitively understood by humans, this is typically via a GUI interface to the digital bits, this transform prevents access to the actual digital bits but rather provides a representation of the digital bits, and hence the observable state is totally dependent upon the transform itself, and may or may not be correlatable to the digital objects or the specific collection of digital bits. The human mind has no ability to comprehend  digital bits without the exitance of one or more digital transforms. 
+
+Law 7: A digital object must exist exclusively within a digital world, it is impossible to move a digital object from a digital world into a object in the rules of a physical world, without a loss of integrity and purpose. As an example, one cannot print on paper a digital signature as the process of the printing destroys all technical security, and all forensic data embedded within the digital object.
+
+This means no digital object is capable of any existence inside a physical world. Thus Within common law jurisdictions, a digital world is not an evolution of the physical world, it is an entirely different domain which in most cases cannot translate directly to the laws of the pre-existent physical domain. As an example it is technically, and hence leally, impossible inside a digital domain to replicate the functionality or achieve the identical legal effect  of a "wet signature" on Valium , parchment or even modern day paper.
+
+Public Key - Digital Signature
+Non-repudiation is a claimed characteristic of digital signatures. Non-repudiation means that the signatory cannot deny their involvement or disown the document or message they signed. But due to law 2, it is impossible for any signer to guarantee ( prove a negative) such exclusive control exists and hence non-repudiation relies on the impossible task of proving in a digital world the signer maintains exclusive control over the private key. Legal non-repudiation is a practicable and legal impossibility for any digital signatures.
+Axiom: the inability of a signer to prove their private key has not been compromised ( prove a negative) means digital signatures are not legal signatures,. A compromised private key also means a document can be changed and resigned no-one can detect such changes due to law 1. 
+From the process described above it is obvious that this process does not have any relationship to affixing a mark or signature to a digital object. The process when coupled with a X.509 public certificate cannot support any form of non-repudiation as it is imposable to prove the private key is under the exclusive control of the signer. The process is simply put a very complex variant of a tradition Cyclic Re3ducndancy Check (CRC).
+Axiom: Digital signatures are not equivalent to traditional handwritten wet signatures in any aspect, as they were designed to support data integrity and cannot provide any form of non-repudiation or match the forensic capabilities of a wet signature in the physical world.
+
+Non-deterministic Signatures
+All EcDsa and RSA based digital signatures generate non-deterministic signatures, this means each and every signature using the same private key and document will be different and essentially random in value.
+Axiom: non-deterministic digital signatures cannot support Non-repudiation, as this would require a negative proof that the private key was in the exclusive possession of the signer, which is a technical and legal imposable task to prove to any degree of certainty.
+Axiom: Non-deterministic digital signatures, guarantee plausible deniability to all signatures.
+With the existence of non-deterministic signatures it always remains possible to repudiate the signature. Deterministic signatures allow the signer to duplicate the signature exactly, and hence prove the 'positive" i.e. that they possess and control the private key. Non-deterministic signatures can always deny they consented to be bound to the contents of any document.
+Axiom: Only deterministic digital signatures, support non-repudiation, via positive evidence and forensics, which can be provided to a court of law.
+Non-repudiation via deterministic digital signatures, refers to the assurance that a party involved in a transaction cannot successfully dispute its authorship or the validity of an associated digitally signed contract.
+
+The Solution
+Information Theoretic Secure - Digital Signatures
+The solution to the intractable digital signatures is the legal concept of covenants, seal and information theoretic secure digital signatures or ITSDSA.
+The courts developed stringent requirements of evidence, proof, and form, so that the facts in issue could be established objectively. The action of covenant was a means of enforcing obligations, but only those obligations which had been stipulated in an instrument made under seal. An obligation recorded via an attached seal was "a promise well-proved".
+The man who relies upon a covenant must produce in proof some 'specialty' digital document under seal. Thenceforward, however, it is only a short step to holding as a matter of law that a 'sealed document'... has an operative force of its own... The sealing and delivering of the digital object is the contractual act.
+The action of covenant has survived to the present day. It is how a digital document under an ITSDSA seal is enforced. All ITSDSA documents are both sealed and executed. Thus, the seal is not an alternative to consideration in triggering the enforcement of a promise; rather it is something that transforms a promise into an executed transfer — a conveyance. Since the executed digital object is generally understood as a conveyance within the common  law tradition, it is accordingly classified within the domain of property law, rather than contract.
+Axiom: The use of an ITSDSA seal is an alternative to consideration for the purpose of creating a binding contract at common law.
+The delivery of an ITSDSA sealed instrument serves to mark the point of simultaneous offer, acceptance, and performance in precisely the same manner as the delivery of gift property in the case of an executed gift.
+
+Logic Bomb-Complexity
+All existing digital signature algorithms ( both public and private key based), suffer from the unknowable and unprovable complexity logic bomb, which self deprecates the legal affect of all digital signatures other than ITSSDSA.
+A traditional digital signature is a complex transform which attempts to use a hash to regenerate the identical signature value. This transform is unknowable by all users of the specific digital signature algorithm and also the vast majority of experts.
+Only a deterministic ITSDSA digital signature provides the unique ability to extract the document hash directly from the signature and hence provide a simple comparison function to prove the "attachment" of the digital mark or seal to the document.
+Axiom: a traditional digital signature cannot be proven in any court of law due this unknowable or complexity.
