@@ -1,5 +1,6 @@
 # ITSDSA
-Information Theoretic Secure Digital Signature Algorithm
+Information Theoretic Secure Digital Signature Algorithm..
+
 This site is the worlds first ITS Digital Signature Infasructure.
 
 The solution to the intractable digital signatures is the legal concept of covenants, seal and information theoretic secure digital signatures or ITSDSA.
