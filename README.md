@@ -1,5 +1,6 @@
 # ITSDSA
 Information Theoretic Secure Digital Signature Algorithm.. 
+
 In legal contexts, an ITSDSA mark or seal is an "action of covenant" that refers to a historical legal action based on a covenant, which is a formal promise, often found in a deed or other written document under seal. The seal signified the solemnity of the promise, making the covenant enforceable even without consideration. 
 
 This site provides, the worlds first ITS Digital Signature Infasructure.
