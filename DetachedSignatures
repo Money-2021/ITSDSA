@@ -9,7 +9,8 @@ Compatibility Issues: The modified document may not be compatible with systems t
 Limited Flexibility: Embedded signatures lack flexibility, especially in scenarios requiring multiple signatures or separate management of signatures and documents. They also necessitate placeholders within the document for signatures, complicating the signing process.
 Privacy: The document content must be provioded/exposed to the signer/platform.
 
-Detached e-signatures offer a solution to these problems by maintaining the original document's integrity and offering greater flexibility and security. Here's why detached e-signatures, as exemplified by the XAdES standard, are superior:
+Detached signatures offer a solution to these problems by maintaining the original document's integrity and offering greater flexibility and security. 
+Here's why detached e-signatures, as exemplified by the XAdES standard, are superior:
 Integrity Protection: By not modifying the original document, detached signatures ensure the document's authenticity is preserved, safeguarding against tampering.
 Total Ownership: Detached signatures give signers complete control over their signature without reliance on large corporate networks, promoting independence and ownership.
 Simultaneous Signing: Detached signatures allow for concurrent signatures, eliminating the need for a sequential signing process and thereby speeding up document workflows.
