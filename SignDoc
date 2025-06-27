@@ -1,0 +1,53 @@
+
+ [TestMethod]
+ public void TestMethod_signDoc()
+ {
+
+     // Load User Token
+     string SecureIdentity = Environment.GetEnvironmentVariable("TestA");
+     string userTokenPath = @"D:\Examples\DS\Token-" + SecureIdentity + ".jwt";
+
+     // Add  content in byte[] 
+     byte[] c = Encoding.UTF8.GetBytes("Test Content");
+     byte[] hashBytes = SHA256.HashData(c);
+
+     // Obtain VaultMe token for this vaulting session
+     string vaultMeToken =UserToken.sign_me(userTokenPath, hashBytes);
+
+     // Sign Document
+     UserToken.RecoveryResponse r = UserToken.GetUserToken(userTokenPath);
+     string userToken = r.jwToken;
+     // Extract endpoint from User Token
+     var securityToken = new JwtSecurityToken(userToken);
+     Uri _baseUri = new Uri(securityToken.Audiences.FirstOrDefault());
+   
+     HttpClient _httpClient = new HttpClient();
+     // Build funtion endpoint Uri
+     string _relativeUrl = "Sign/Sign";
+     Uri _uri = new Uri(_baseUri, _relativeUrl);
+     _httpClient.BaseAddress = _baseUri;
+     // Add User Jwtoken
+     _httpClient.DefaultRequestHeaders.Add("x-token", vaultMeToken);
+       
+     // Get response
+     HttpResponseMessage response = _httpClient.GetAsync(_uri).Result;
+     if (response.IsSuccessStatusCode)
+     {
+
+         Stream receiveStream = response.Content.ReadAsStream();
+         StreamReader reader = new StreamReader(receiveStream, Encoding.UTF8);
+         string jwSignature = reader.ReadToEnd();
+
+     }
+     else
+     {
+         // fail
+         string error = response.Content.ReadAsStringAsync().Result;
+         if (string.IsNullOrEmpty(error))
+         {
+             error = response.ReasonPhrase;
+         }
+         throw new Exception(error);
+     }
+
+ }
