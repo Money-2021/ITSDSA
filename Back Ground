@@ -1,4 +1,4 @@
-ainThe physical and digital worlds are not the same, all digital objects that exist inside a digital world must follow the following laws:
+inainThe physical and digital worlds are not the same, all digital objects that exist inside a digital world must follow the following laws:
 
 Law 1: No digital object can be "dated" as the passage of time cannot have any measurable, or observable effect on any digital object. There exists no functional equivalent of 'carbon dating' within a digital world. Digital Objects are ageless, and it is technically impossible, to determine any precedence or order of existence of one digital object, from another identical digital object across a space-time or temporal context.
 Law 2: Any copy of a digital object must always be a "Digital Original", the concept of a copy cannot exist inside a digital world. And an infinite no of copies can exist of any digital object.
@@ -44,9 +44,9 @@ The Key Generator and ITSDSA algorigms are held as a trade secret for purly comm
 Instead, the security is based on the secrecy of the cryptographic key. Which is never stored or reused.
 
 "Impact on Existing Signatures"
-When a system transitions to using ITSDSA signatures, it's possible that any previously created signatures using classical algorithms might become vulnerable. 
-If a quantum computer could break the classical algorithm used for those signatures, it could forge new signatures or invalidate existing ones. ITSDSA signatures are proven secure against all konwn and unknonw atatcksand hence are secure against quantum attacks, 
-but all existing public key based systems including POST Quantium signatures remain vulnerable. 
+When a system transitions to using ITSDSA signatures, it's possible that any previously created signatures using classical algorithms remain vulnerable, and hence their legal effect self deprecates. 
+As quantum computers break the classical algorithms used for those public key based signatures, anyone could forge new signatures and hence invalidate all previous signatures. ITSDSA signatures are proven secure against all konwn and unknonw atatcks and hence are secure against quantum attacks, 
+but all existing public key based systems including POST all propposed Quantium signatures remain vulnerable. 
 
 Notes
 1. An action of covenant is a legal action to enforce a covenant, which is a formal agreement or promise, typically found in deeds or contracts. It is a historical legal action, particularly relevant in contract and property law.
