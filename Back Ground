@@ -40,7 +40,7 @@ Only a deterministic ITSDSA digital signature provides the unique ability to ext
 Axiom: a traditional digital signature cannot be proven in any court of law due this unknowable or complexity.
 
 "Proprietry or Trade Secret
-The Key Generator and ITSDSA algorigms are held as a trade secret for purly commercial reaons. In accordance with Kerckhoffs' principe the knowledge of these proprietry functions; the security of these cryptographic funtions does not rely on the secrecy of the algorithms.  
+The Key Generator and ITSDSA algorigms are held as a trade secret for purly commercial reaons. In accordance with Kerckhoffs' principe the knowledge of these proprietry functions does not affect the security of these cryptographic funtions, as the security does not rely on the secrecy of the algorithms.  
 Instead, the security is based on the secrecy of the cryptographic key. Which is never stored or reused.
 
 Notes
