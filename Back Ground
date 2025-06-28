@@ -39,6 +39,10 @@ A traditional digital signature is a complex transform which attempts to use a h
 Only a deterministic ITSDSA digital signature provides the unique ability to extract the document hash directly from the signature and hence provide a simple comparison function to prove the "attachment" of the digital mark or seal to the document.
 Axiom: a traditional digital signature cannot be proven in any court of law due this unknowable or complexity.
 
+Proprietry or Trade Secret
+The Key Generator and ITSDSA algorigms are held as a trade secret for purley comemrial reaons. In accordance with Kerckhoffs' principe the knowlwdge of these proprietry funtions does not security of these cryptographic funtions does not rely on the secrecy of the algorithms. 
+Instead, it is ONLY based on the secrecy of the cryptographic key. Which is never stored or reused.
+
 Notes
 1. An action of covenant is a legal action to enforce a covenant, which is a formal agreement or promise, typically found in deeds or contracts. It is a historical legal action, particularly relevant in contract and property law.
 
