@@ -33,15 +33,20 @@ The action of covenant has survived to the present day. It is how a digital docu
 Axiom: The use of an ITSDSA seal is an alternative to consideration for the purpose of creating a binding contract at common law.
 The delivery of an ITSDSA sealed instrument serves to mark the point of simultaneous offer, acceptance, and performance in precisely the same manner as the delivery of gift property in the case of an executed gift.
 
-Logic Bomb-Complexity
+"Logic Bomb-Complexity"
 All existing digital signature algorithms ( both public and private key based), suffer from the unknowable and unprovable complexity logic bomb, which self deprecates the legal affect of all digital signatures other than ITSDSA.
 A traditional digital signature is a complex transform which attempts to use a hash to regenerate the identical signature value. This transform is unknowable by all users of the specific digital signature algorithm and also the vast majority of experts.
 Only a deterministic ITSDSA digital signature provides the unique ability to extract the document hash directly from the signature and hence provide a simple comparison function to prove the "attachment" of the digital mark or seal to the document.
 Axiom: a traditional digital signature cannot be proven in any court of law due this unknowable or complexity.
 
-"Proprietry or Trade Secret
+"Proprietry or Trade Secret"
 The Key Generator and ITSDSA algorigms are held as a trade secret for purly commercial reaons. In accordance with Kerckhoffs' principe the knowledge of these proprietry functions does not affect the security of these cryptographic funtions, as the security does not rely on the secrecy of the algorithms.  
 Instead, the security is based on the secrecy of the cryptographic key. Which is never stored or reused.
+
+"Impact on Existing Signatures"
+When a system transitions to using ITSDSA signatures, it's possible that any previously created signatures using classical algorithms might become vulnerable. 
+If a quantum computer could break the classical algorithm used for those signatures, it could forge new signatures or invalidate existing ones. ITSDSA signatures are proven secure against all konwn and unknonw atatcksand hence are secure against quantum attacks, 
+but all existing public key based systems including POST Quantium signatures remain vulnerable. 
 
 Notes
 1. An action of covenant is a legal action to enforce a covenant, which is a formal agreement or promise, typically found in deeds or contracts. It is a historical legal action, particularly relevant in contract and property law.
