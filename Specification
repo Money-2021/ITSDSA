@@ -4,7 +4,7 @@ ITSDSA512 Specification
 3. Signature Hash is SHAKE256 with a hash size of 64 bytes
 4. Key size is 64 bytes or 512 bits or (Cryptographicly Secure bit stream) 
 5. The Authetication algorith is a keys hash as defined by Poly1305
-6. Signature Size is fixed at 64 + 16 or 80 bytes (Cryptographicly Secure bit stream)
+6. Signature Size is fixed at 64 + 16 or 80 bytes (Cryptographicly Secure bit stream QRNG XOR QRNG = QRNG)
 7. Process
 a) The 'To be signed data' is hashed as per 3 above
 b) The 64 byte Cryptographicly Secure key is derived from a normalised QRAND 64 byte TRNG seed.
