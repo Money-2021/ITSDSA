@@ -12,4 +12,4 @@ c) The output is processed via the key in b) via an authenticated 'Vernan Cipher
 d) Each signature must be crpyogrphically bound to a unique secure identoty via a publised Key Identifier(kid), 
 this kid shall determiniostically re-generate the orignal key in b) upon demand to verify the Signature.
 
-Via kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an atatcker gains no information about the signature, even with unlimited computational resources including time, as long as the 'key' remain secret.
+Via kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an attacker gains no information about the signature, even with unlimited computational resources and time, as long as the 'key' remain secret.
