@@ -20,3 +20,5 @@ Notes
 1. Kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an attacker gains no information about the signature, even with unlimited computational resources and time, as long as the 'key' remain secret.
 2. An ITS-KMS provides the ablity to create and recreate (shannon defined min-entropy) keys upon demand without the need to store any (Cryptographicly Secure bit stream). 
 3. Withn the reference deployment key seeds are Medley vectors, a set of BigInts which are then compressed into a single 64 byte seed for processing by a cryptogrphically secure Key Genmerator(KG).
+4. The One Shot Signature overcomes the limitations related to symetrical key (no public keys)  based signature schemessuch as HMAC. The "One-Shot Signature" electronic signatures provides non-repudiation with maximum legal and security guarantees.
+ITSDSA512 is in according to the eIDAS regulation, the highest level of electronic signatures, which enjoy the maximum legal guarantees, as long as the key remains secret and is never reused or stored.
