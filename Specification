@@ -1,0 +1,13 @@
+ITSDSA512 Specification
+1. This Digital Signature Algorith has the following proof: https://github.com/Money-2021/VaultedObjects/blob/main/Proof
+2. Algotitm is set to : ITSDSA512
+3. Signature Hash is SHAKE256 with a hash size of 64 bytes
+4. Key size is 64 bytes or 512 bits or (Cryptographicly Secure bit stream) 
+5. The Authetication algorith is a keys hash as defined by Poly1305
+6. Signature Size is fixed at 64 + 16 or 80 bytes (Cryptographicly Secure bit stream)
+7. Process
+a) The 'To be signed data' is hashed as per 3 above
+b) The 64 byte Cryptographicly Secure key is derived from a normalised QRAND 64 byte TRNG seed.
+c) The output is processed via the key in b) via an authenticated 'Vernan Cipher' (Vernan 64 byte + Poly1305 16 byte) to produce the 80 byte signmature.
+d) Each signature must be crpyogrphically bound to a unique secure identoty via a publised Key Identifier (kid), 
+this kid shall determiniostically re-generate the orignal key in b) upon demand to verify the Signature.
