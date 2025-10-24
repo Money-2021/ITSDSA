@@ -14,4 +14,4 @@ this kid shall determiniostically re-generate the orignal key in b) upon demand 
 
 Notes
 1. Kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an attacker gains no information about the signature, even with unlimited computational resources and time, as long as the 'key' remain secret.
-2. An ITS-KMS provides the ablity to create and recreat (min-entropy) keys upon demand withoout the need to store any (Cryptographicly Secure bit stream).
+2. An ITS-KMS provides the ablity to create and recreate (shannon defined min-entropy) keys upon demand withoout the need to store any (Cryptographicly Secure bit stream).
