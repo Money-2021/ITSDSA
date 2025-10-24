@@ -11,6 +11,7 @@ b) The 64 byte Cryptographicly Secure key is derived from a normalised QRND 64 b
 c) The output is processed via the key in b) via an authenticated 'Vernan Cipher' (Vernan 64 byte + Poly1305 16 byte) to produce the 80 byte signature.
 d) Each signature must be crpyogrphically bound to a unique secure identoty via a publised Key Identifier(kid), 
 this kid shall determiniostically re-generate the orignal key in b) upon demand to verify the Signature.
+8. No keys are stored, each signature is determinist and each signature key is used once (One Shot Digital Signature).
 
 Notes
 1. Kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an attacker gains no information about the signature, even with unlimited computational resources and time, as long as the 'key' remain secret.
