@@ -19,4 +19,4 @@ this kid shall determiniostically re-generate the orignal key in b) upon demand 
 Notes
 1. Kerckhoffs principle, ITSDSA512 signatures are unconditional secure by ensuring an attacker gains no information about the signature, even with unlimited computational resources and time, as long as the 'key' remain secret.
 2. An ITS-KMS provides the ablity to create and recreate (shannon defined min-entropy) keys upon demand without the need to store any (Cryptographicly Secure bit stream). 
-3. Withn the reference deployment key seeds are Medley vectors, are a set of BigInts compressed into a single 64 byte seed for the Key Genmerator(KG).
+3. Withn the reference deployment key seeds are Medley vectors, a set of BigInts which are then compressed into a single 64 byte seed for processing by a cryptogrphically secure Key Genmerator(KG).
