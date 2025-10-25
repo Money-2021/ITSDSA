@@ -22,4 +22,6 @@ Notes
 3. Withn the reference deployment key seeds are Medley vectors, a set of BigInts which are then compressed into a single 64 byte seed for processing by a cryptogrphically secure Key Genmerator(KG).
 4. We define the notion of one-shot signatures, which are signatures where any secret key can be used to sign only a single object, and then self-destructs. 
 5. The One Shot Signature overcomes the limitations related to symetrical key (no public keys)  based signature schemes such as HMAC. The "One-Shot Signature" electronic signatures provides non-repudiation with maximum legal and security guarantees.
+6. ITSDSA One Shot Signature never shares seds or keys with any replying party, if required for non-repudaiation purposes a Signature Certificate ca be issued attsting to a) the validaity of the signature and the binding to the Secure Identity, 
+and c) the validtion of the ITSDSA signature against a pre caulted hash value of the object in accordance with 3 above.
 ITSDSA512 is in according to the eIDAS regulation, the highest level of electronic signatures, which enjoy the maximum legal guarantees, as long as the key remains secret and is never reused or stored.
