@@ -1,0 +1,43 @@
+ [TestMethod]
+ public void TestMethod_sign_certify()
+ {
+
+     // Load User Token
+     string SecureIdentity = Environment.GetEnvironmentVariable("TestA");
+     string userTokenPath = @"D:\Examples\VO\Token-" + SecureIdentity + ".jwt";
+     string sToken = System.IO.File.ReadAllText(userTokenPath);
+     UserToken.RecoveryResponse r = UserToken.GetUserToken(userTokenPath);
+
+     string id = "a55331ac-6797-ce03-be45-ee66ba715607";
+     string Path = @"D:\Examples\VO\Sign\DSig-" + id + ".jwt";
+     string signed = System.IO.File.ReadAllText(Path);
+     StringContent content = new StringContent(signed);
+     // Extract Function endpoint from User Token
+     var securityToken = new JwtSecurityToken(r.jwToken);
+     Uri _baseUri = new Uri(securityToken.Audiences.FirstOrDefault());
+
+     // Build funtion endpoint Uri
+     HttpClient _httpClient = new HttpClient();
+     string _relativeUrl = "Sign/Certify";
+     Uri _uri = new Uri(_baseUri, _relativeUrl);
+     _httpClient.BaseAddress = _baseUri;
+     // Add User Jwtoken
+     _httpClient.DefaultRequestHeaders.Add("x-token", r.jwToken);
+     HttpResponseMessage response = _httpClient.PostAsync(_uri, content).Result;
+     if (response.IsSuccessStatusCode)
+     {
+         // detached ITSDSA signature
+         string c = response.Content.ReadAsStringAsync().Result;
+         Path = @"D:\Examples\VO\Sign\DCert" + id + ".jwt";
+         System.IO.File.WriteAllText(Path, c);
+
+         Debug.WriteLine(cert);
+     }
+     else
+     {
+         // fail
+         string error = response.Content.ReadAsStringAsync().Result;
+         throw new Exception(error);
+     }
+
+ }
