@@ -23,7 +23,7 @@
   
      // Build funtion endpoint Uri
      HttpClient _httpClient = new HttpClient();
-     string _relativeUrl = "Sign/SignHash"; 
+     string _relativeUrl = "Sign/SignHash";  // use Ed448SignHash for Ed448 signatures
      Uri _uri = new Uri(_baseUri, _relativeUrl);
      _httpClient.BaseAddress = _baseUri;
      // Add User Jwtoken
