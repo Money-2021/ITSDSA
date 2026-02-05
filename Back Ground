@@ -48,6 +48,15 @@ When a system transitions to using ITSDSA signatures, it's possible that any pre
 As quantum computers break the classical algorithms used for those public key based signatures, anyone could forge new signatures and hence invalidate all previous signatures. ITSDSA signatures are proven secure against all konwn and unknonw atatcks and hence are secure against quantum attacks, 
 but all existing public key based systems including POST all propposed Quantium signatures remain vulnerable. 
 
+***Alternative or Optional One Shot Public Key Signatures
+As an alternative to the complete ITSDSA512 solution, an intium 'One Shot' Edwards448 signature option is available.
+We define the notion of one-shot signatures, which are signatures where an ephemeral secret CSNBRNG key can be used to sign only a single information object, and then self-destructs, preventing a second message from ever being signed. 
+The one shot key is never stored. As EDDSA signatures are deterministic any attempt to reuse the private key is easily detected and any subsequent signatures for any given document can be rejected.
+The One shot signature is never reused for any other attestation and hence even if the private key is derived from the public key, it no longer matters and hence all forms of PQC are deprecated.
+
+All One-shot public key signatures come with a cryptographic proof verifying the ephemeral nature of the signature from a single and Secure Identity unique key space.
+
+
 Notes
 1. An action of covenant is a legal action to enforce a covenant, which is a formal agreement or promise, typically found in deeds or contracts. It is a historical legal action, particularly relevant in contract and property law.
 
