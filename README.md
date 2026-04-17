@@ -18,3 +18,11 @@ The delivery of an ITSDSA sealed instrument serves to mark the point of simultan
 Further Reading
 https://www.patreon.com/posts/digital-trick-112638185
 
+ Sign-Today-Forge-Tomorrow or Trust-Now-Forge-Later (SFTF)  is the digital‑signature equivalent of HNDL. 
+Digital signatures underpin everything from software updates and firmware integrity to identity verification and supply‑chain provenance. Today’s signatures are based on RSA or ECDSA, which quantum computers will also break. 
+When that happens, adversaries won’t just read secrets – they will forge signatures at will. 
+The term Sign-Today-Forge-Tomorrow or Trust-Now-Forge-Later describes situations where the roots of trust are set at manufacture time and cannot be updated; once quantum computers exist, those signatures become meaningless. Hardware roots such as ePassports, industrial control systems and satellites often embed long‑lived keys; field updates may be impossible or incomplete...
+
+Unlike encrypted secrets, which remain opaque until a future decryption, a forged signature yields immediate and invisible compromise. A malicious firmware image or software update signed with a forged key would install smoothly – exactly as if it came from the vendor. 
+Users and automated systems would never know they were compromised. Forging TLS certificates and code‑signing keys is the more immediate and damaging threat. In other words, Q‑Day for signatures doesn’t have a slow‑burn lead time like HNDL; it’s a cliff.
+
