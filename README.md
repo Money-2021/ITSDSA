@@ -11,7 +11,7 @@ The courts developed stringent requirements of evidence, proof, and form, so tha
 The man who relies upon a covenant must produce in proof some 'specialty' digital document under seal. Thenceforward, however, it is only a short step to holding as a matter of law that a 'sealed document'... has an operative force of its own... The sealing and delivering of the digital object is the contractual act.
 The action of covenant has survived to the present day. It is how a digital document under an ITSDSA seal is enforced. All ITSDSA documents are both sealed and executed. Thus, the seal is not an alternative to consideration in triggering the enforcement of a promise; rather it is something that transforms a promise into an executed transfer — a conveyance. Since the executed digital object is generally understood as a conveyance within the common  law tradition, it is accordingly classified within the domain of property law, rather than contract.
 
-Axiom: The use of an ITSDSA seal is an alternative to consideration for the purpose of creating a binding contract at common law.
+Axiom: The use of an ITSDSA seal is an alternative to consideration for the purpose of creating a binding contract at common law. It is a direct plugin replacement for all existing HMAC digital signatures.
 
 The delivery of an ITSDSA sealed instrument serves to mark the point of simultaneous offer, acceptance, and performance in precisely the same manner as the delivery of gift property in the case of an executed gift.
 
